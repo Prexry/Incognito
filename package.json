@@ -1,4 +1,5 @@
 {
+  "name": "Incognito"
   "version": "1.0.0",
   "description": "Unofficial Incognito easy deployment version with TompHTTP bare server included.",
   "type": "module",
@@ -13,18 +14,6 @@
     "ssl",
     ".gitignore",
     "app.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amethystnetwork-dev/Incognito"
-  },
-  "keywords": [
-    "unoffical",
-    "ultraviolet",
-    "unblock",
-    "titaniumnetwork",
-    "bypass-filter",
-    "amethystnetwork-dev"
   ],
   "author": "",
   "license": "GPL-3.0-or-later",
