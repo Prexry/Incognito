@@ -16,7 +16,24 @@
                                                __/ |                                                                    
                                               |___/                                                                     
 */
-import { App } from './app.js'
+
+console.log(`Incognito
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.`);
+
+if(['netlify.app', 'vercel.app', 'github.io', 'gitlab.io', 'pages.dev'].filter(host => window.location.hostname.includes(host)).length) throw alert(`You cannot deploy to ${window.location.hostname}. Did you read the notice before deploying?`);
+
+import { App } from './app.js';
 import { gs } from './gs.js';
 import { apps } from './apps.js';
 import { access } from './home.js';
@@ -115,8 +132,7 @@ app.on('exit', async () => {
 
     app.search.logo.style.display = 'none';
     app.search.submit.style.display = 'none';
-
-    app.search.input.removeAttribute('oninput');
+	
     app.search.title.textContent = '';
     app.search.title.style.display = 'none';
 
